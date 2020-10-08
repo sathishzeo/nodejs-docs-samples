@@ -20,7 +20,19 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.status(200).render('index.html').end();
+  res.status(200).send("<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Iam Sathish G</h1>
+  <img src="PSX_20200529_000437.jpg" alt="1">
+  </body>
+</html>").end();
 });
 
 // Start the server
