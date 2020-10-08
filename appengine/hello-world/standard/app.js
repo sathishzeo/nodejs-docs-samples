@@ -20,8 +20,7 @@ const express = require('express');
 const app = express();
 
 app.get('/', (req, res) => {
-  res.status(200).send(" <h1>Iam Sathish G</h1>
-  <img src="PSX_20200529_000437.jpg" alt="1">").end();
+  res.status(200).send('./index.html').end();
 });
 
 // Start the server
